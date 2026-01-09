@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PI_TECH | Toko Komputer</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f2f4f7;
+}
+
+header {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 35px;
+    text-align: center;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(15, 32, 39, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 12px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(135deg, #00c853, #64dd17);
+    box-shadow: 0 0 12px rgba(0,200,83,0.7);
+}
+
+.section {
+    padding: 50px 20px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* PENGGANTI GAMBAR */
+.image-box {
+    height: 180px;
+    background: linear-gradient(135deg, #203a43, #0f2027);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.card-content {
+    padding: 18px;
+}
+
+.price {
+    color: #00a152;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn {
+    display: block;
+    margin-top: 12px;
+    padding: 10px;
+    background: #00a152;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.service {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+}
+
+footer {
+    background: #0f2027;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>PI_TECH</h1>
+    <p>Toko Laptop • PC • Service Komputer</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#produk">💻 Produk</a></li>
+        <li><a href="#service">🛠️ Service</a></li>
+        <li><a href="#kontak">📞 Kontak</a></li>
+    </ul>
+</nav>
+
+<section class="section">
+    <h2>Solusi Teknologi Terpercaya</h2>
+    <p style="text-align:center;">Harga bersahabat • Pelayanan cepat • Bergaransi</p>
+</section>
+
+<section class="section" id="produk">
+    <h2>Produk Laptop & PC</h2>
+    <div class="products">
+
+        <div class="card">
+            <div class="image-box">💻 Laptop Core i5</div>
+            <div class="card-content">
+                <p>RAM 8GB • SSD 512GB</p>
+                <p class="price">Rp 6.700.000</p>
+                <a class="btn" href="#">Pesan</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-box">💻 Laptop Core i7</div>
+            <div class="card-content">
+                <p>RAM 16GB • SSD 1TB</p>
+                <p class="price">Rp 9.900.000</p>
+                <a class="btn" href="#">Pesan</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image-box">🖥️ PC Gaming</div>
+            <div class="card-content">
+                <p>Ryzen • VGA Gaming</p>
+                <p class="price">Rp 13.500.000</p>
+                <a class="btn" href="#">Pesan</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section" id="service">
+    <h2>Layanan Service Komputer</h2>
+    <div class="products">
+
+        <div class="service">
+            <h3>✔ Install Ulang</h3>
+            <p>Windows & Software</p>
+            <p class="price">Rp 100.000</p>
+        </div>
+
+        <div class="service">
+            <h3>✔ Upgrade Laptop</h3>
+            <p>SSD • RAM • Cleaning</p>
+            <p class="price">Mulai Rp 150.000</p>
+        </div>
+
+        <div class="service">
+            <h3>✔ Perbaikan Laptop</h3>
+            <p>Mati Total • Lemot</p>
+            <p class="price">Mulai Rp 75.000</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section" id="kontak">
+    <h2>Kontak PI_TECH</h2>
+    <p style="text-align:center;">
+        📞 WhatsApp: 085745498979 <br>
+        📍 PI_TECH Computer Store
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 PI_TECH • All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
